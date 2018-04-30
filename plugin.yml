@@ -1,0 +1,8 @@
+name: ${project.artifactId}
+main: me.badbones69.vouchers.Main
+version: ${project.version}
+description:  Make Custom Vouchers just for your server!
+commands:
+  Voucher:
+    description: Give yourself a Voucher!
+    aliases: [vouch]
