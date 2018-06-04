@@ -124,14 +124,14 @@ Vouchers: #Where you make your vouchers.
       - '&7Win a random prize.'
       - ''
       - '&6&l#1: &a$100'
-      - '&6&l#2: &a$1000'
-      - '&6&l#3: &a$10000'
-      - '&6&l#4: &a$100000'
-      - '&6&l#5: &a$1000000'
+      - '&6&l#2: &a$1,000'
+      - '&6&l#3: &a$10,000'
+      - '&6&l#4: &a$100,000'
+      - '&6&l#5: &a$1,000,000'
       - ''
       - '&7&l(&6&l!&7&l) &7Right click to redeem.'
     Glowing: false
-    Random-Command: #Picks a random prize. There is no chance system for this only a random prize.
+    Random-Commands: #Picks a random prize. There is no chance system for this only a random prize.
       - 'eco give %Player% 100'
       - 'eco give %Player% 1000'
       - 'eco give %Player% 10000'
@@ -148,15 +148,15 @@ Vouchers: #Where you make your vouchers.
       - '&7You feeling lucky?'
       - ''
       - '&6&l#1: &a$100 &c45%'
-      - '&6&l#2: &a$1000 &25c%'
-      - '&6&l#3: &a$10000 &c15%'
-      - '&6&l#4: &a$100000 &c10%'
-      - '&6&l#5: &a$1000000 &c05%'
+      - '&6&l#2: &a$1,000 &c25%'
+      - '&6&l#3: &a$10,000 &c15%'
+      - '&6&l#4: &a$100,000 &c10%'
+      - '&6&l#5: &a$1,000,000 &c5%'
       - ''
       - '&7&l(&6&l!&7&l) &7Right click to redeem.'
     Glowing: false
     #Chance Command Layout: - '<Chance> <Command goes after>'
-    Chance-Command: #Picks a prizes based on a chance system. Chance-System wiki: 
+    Chance-Commands: #Picks a prizes based on a chance system. Chance-System wiki: 
       - '45 eco give %Player% 100'
       - '25 eco give %Player% 1000'
       - '15 eco give %Player% 10000'
