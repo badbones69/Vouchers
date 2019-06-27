@@ -1,6 +1,6 @@
 ###################################
 #             Items: Options
-# Item: <ID:MD/Item Name> - You can choose the item with its id and meta data.
+# Item: <ID:MD> - You can choose the item with its id and meta data.
 # Amount: <Number> - Choose how many of the item you get.
 # Name: <Name> - The display name that goes on the item.
 # Lore: <Line 1>,<Line 2>,<Line 3>,<Line 4> - The lore that will go under the enchantments. Split lines with a ','
@@ -34,15 +34,18 @@ Vouchers: #Where you make your vouchers.
         Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.' #The message sent to the user that tried to use it in a non whitelisted world.
         Worlds: #List of worlds you want the voucher to be used in.
           - 'world'
+        Commands: [] #Run commands if the player doesn't have the permission.
       Permission: #Permission options.
         Whitelist-Permission: #The player needs this permission to use it.
           Toggle: false #Toggle the permission on or off.
           Node: 'money' #The permission node.
+          Commands: [] #Run commands if the player doesn't have the permission.
         Blacklist-Permissions: #If the player has any of these permissions then they can't use the voucher.
           Toggle: false #Toggle if it checks for black listed permissions.
           Message: '&cYou have a blacklisted permission and can''t use this voucher.' #The message that is sent to the player if they have a blacklisted message. Use %permission% if you wise to show the permission they need.
           Permissions: #List all the blacklisted permissions here.
             - 'voucher.blacklist.money'
+          Commands: [] #Run commands if the player doesn't have the permission.
       Limiter: #Limiter options.
         Toggle: false #Toggle on or off the limiter.
         Limit: 10 #The limit of how many time it may be used.
@@ -51,7 +54,7 @@ Vouchers: #Where you make your vouchers.
       Sound: #The sound options.
         Toggle: true #Toggle on or off if a sound is played.
         Sounds: #The sound that is played. Make sure the sound works with your minecraft version.
-          - 'CLICK'
+          - 'UI_BUTTON_CLICK'
       Firework: #The firework options
         Toggle: true #Toggle if the firework goes off.
         Colors: 'Green, Lime' #The colors of the firework.
@@ -71,15 +74,18 @@ Vouchers: #Where you make your vouchers.
         Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
         Worlds:
           - 'world'
+        Commands: []
       Permission:
         Whitelist-Permission:
           Toggle: false
           Node: 'rankup'
+          Commands: []
         Blacklist-Permissions:
           Toggle: false
           Message: '&cYou already have this rank and can''t use this voucher.'
           Permissions:
             - 'voucher.blacklist.rankup'
+          Commands: []
       Limiter:
         Toggle: false
         Limit: 10
@@ -88,7 +94,7 @@ Vouchers: #Where you make your vouchers.
       Sound:
         Toggle: true
         Sounds:
-          - 'CLICK'
+          - 'UI_BUTTON_CLICK'
       Firework:
         Toggle: true
         Colors: 'Black, Gray, Red'
@@ -111,15 +117,18 @@ Vouchers: #Where you make your vouchers.
         Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
         Worlds:
           - 'world'
+        Commands: []
       Permission:
         Whitelist-Permission:
           Toggle: false
           Node: 'gset'
+          Commands: []
         Blacklist-Permissions:
           Toggle: false
           Message: '&cYou have a blacklisted permission and can''t use this voucher.'
           Permissions:
             - 'voucher.blacklist.gset'
+          Commands: []
       Limiter:
         Toggle: false
         Limit: 10
@@ -128,7 +137,7 @@ Vouchers: #Where you make your vouchers.
       Sound:
         Toggle: true
         Sounds:
-          - 'CLICK'
+          - 'UI_BUTTON_CLICK'
       Firework:
         Toggle: true
         Colors: 'Black, Gray, Aqua'
