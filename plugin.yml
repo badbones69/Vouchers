@@ -6,4 +6,4 @@ description:  Make Custom Vouchers just for your server!
 commands:
   Voucher:
     description: Give yourself a Voucher!
-    aliases: [vouch]
+    aliases: [vouch, vouchers]
